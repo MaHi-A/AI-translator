@@ -1,0 +1,15 @@
+{
+  "name": "ai-translator",
+  "version": "1.0.0",
+  "description": "AI translator poc",
+  "type": "module",
+  "main": "translator.js",
+  "scripts": {
+    "start": "node translator.js"
+  },
+  "author": "Mahesh Anethala",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.55.1"
+  }
+}

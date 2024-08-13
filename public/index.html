@@ -1,16 +1,57 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File Upload</title>
+  <title>AI Translator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Upload a File</h1>
-  <form action="/upload" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" required />
-    <button type="submit">Upload</button>
-  </form>
+<body class="bg-light d-flex justify-content-center align-items-center min-vh-100">
+
+  <div class="container bg-white p-5 shadow-lg rounded border">
+    <h1 class="text-center mb-4">AI Translator</h1>
+    <p class="text-center mb-4">Upload a JSON document to translate</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-row border border-secondary  d-flex justify-content-center align-items-center text-center p-5">
+        <!-- Left Side -->
+        <div class="col-md-5">
+          <div class="form-group">
+            <input type="file" class="form-control-file" id="fileInput" name="file" accept=".json" required>
+          </div>
+
+          <div class="form-group mt-4">
+            <label for="language-select">Select Language:</label>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-md-5 d-flex flex-column justify-content-between">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary w-100 mb-2" name="uploadButton">Upload</button>
+            <select class="form-control mt-4" name="language" id="language-select" required>
+              <option value="">--Select Language--</option>
+              <option value="af-ZA">Afrikaans (South Africa)</option>
+              <!-- Add more language options here -->
+            </select>            
+          </div>
+        </div>
+
+        <div class="col-md-5">
+        </div>
+
+        <div class="col-md-5 d-flex flex-column justify-content-between mt-4">
+          <div class="form-group">
+            <button type="submit" class="btn btn-success w-100 mt-auto" name="submitButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "welcome_message": "Welcome to our application!",
+  "login_prompt": "Please enter your username and password.",
+  "logout_message": "You have successfully logged out.",
+  "error_404": "Error 404: Page not found.",
+  "error_generic": "An unexpected error occurred. Please try again later.",
+  "button_submit": "Submit",
+  "button_cancel": "Cancel",
+  "label_username": "Username",
+  "label_password": "Password",
+  "placeholder_search": "Search...",
+  "notification_success": "Your action was successful!",
+  "notification_failure": "Something went wrong. Please try again.",
+  "settings_title": "Settings",
+  "profile_title": "Profile",
+  "profile_edit": "Edit Profile",
+  "profile_save": "Save Changes",
+  "menu_home": "Home",
+  "menu_about": "About Us",
+  "menu_contact": "Contact Us",
+  "footer_privacy_policy": "Privacy Policy",
+  "footer_terms_of_service": "Terms of Service"
+}
